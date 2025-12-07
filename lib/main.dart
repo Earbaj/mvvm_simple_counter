@@ -1,16 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:simple_mvvm/viewmodel/counter_view_model.dart';
-import 'view/counter_screen.dart';
 
-void main() {
+import 'di/injection_container.dart';
+import 'features/counter/presentation/pages/counter_page.dart';
+import 'features/counter/presentation/viewmodel/counter_viewmodel.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await init(); // DI initialization
+
   runApp(
     ChangeNotifierProvider(
-      create: (_) => CounterViewModel(),
+      create: (context) => sl<CounterViewModel>()..load(),
       child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: CounterScreen(),
+        home: CounterPage(),
       ),
     ),
   );
 }
+
