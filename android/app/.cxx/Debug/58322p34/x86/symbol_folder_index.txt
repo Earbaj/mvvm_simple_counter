@@ -1,0 +1,1 @@
+/home/earbaj/AndroidStudioProjects/simple_mvvm/build/app/intermediates/cxx/Debug/58322p34/obj/x86

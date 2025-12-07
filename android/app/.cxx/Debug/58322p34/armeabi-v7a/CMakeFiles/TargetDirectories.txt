@@ -1,0 +1,2 @@
+/home/earbaj/AndroidStudioProjects/simple_mvvm/android/app/.cxx/Debug/58322p34/armeabi-v7a/CMakeFiles/edit_cache.dir
+/home/earbaj/AndroidStudioProjects/simple_mvvm/android/app/.cxx/Debug/58322p34/armeabi-v7a/CMakeFiles/rebuild_cache.dir
