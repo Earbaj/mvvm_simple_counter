@@ -1,10 +1,14 @@
 
 import 'package:simple_mvvm/features/auth/domain/repositories/auth_repository.dart';
 
-class Logout{
+class LogoutUseCase{
+
   final AuthRepository repository;
-  Logout(this.repository);
+
+  LogoutUseCase(this.repository);
+
   Future<void> call() async {
-    return repository.logout();
+    await repository.logout();
   }
+
 }
